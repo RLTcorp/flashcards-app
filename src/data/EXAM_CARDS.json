@@ -1,0 +1,322 @@
+{
+  "chapitres": [
+    {
+      "id": 1,
+      "titre": "Chapitre 1",
+      "questions": [
+        {
+          "question": "Quelle est la différence entre un réseau, Internet et le Web ?",
+          "reponse": "Le Réseau (Network) : C'est l'infrastructure matérielle de base. Il s'agit d'un ensemble d'équipements informatiques (ordinateurs, serveurs, routeurs) interconnectés et capables de communiquer entre eux. Il se définit par ses canaux de transmission (Wi-Fi, Ethernet) et sa topologie (architecture en étoile, maillée, ou All2All).\n\nInternet : C'est le réseau mondial de réseaux interconnectés. C'est une infrastructure physique globale (soutenue notamment par les câbles sous-marins) qui sert d'autoroute de l'information. Internet héberge une multitude de services applicatifs indépendants, tels que le courrier électronique (Mails), la messagerie instantanée (Chat), le transfert de fichiers (FTP), et le Web.\n\nLe Web (World Wide Web) : C'est uniquement un service spécifique parmi d'autres qui fonctionne sur l'infrastructure d'Internet. C'est un système de documents hyperliés accessibles via le protocole applicatif HTTP grâce à un navigateur.\n\nLe piège à l'oral : Confondre Internet et le Web. N'oubliez pas de rappeler au professeur que le Web n'est pas synonyme d'Internet, mais qu'il s'agit d'une application de celui-ci."
+        },
+        {
+          "question": "Quelles sont les différentes parties d'une URL ?",
+          "reponse": "En se basant sur le modèle standard analysé en cours (https://www.unamur.be:80/fr/info?key1=value1&key2=value2#anchor) :\n\nScheme (Protocol) : Définit le protocole de communication utilisé pour transférer la ressource (ex: https).\nDomain (Host) : L'adresse réseau lisible (nom de domaine) du serveur qui héberge la ressource (ex: www.unamur.be).\nPort : Le point d'entrée logique spécifique sur le serveur (ex: 80). Note pour l'oral : Par défaut, si on ne le précise pas, le navigateur utilise le port 80 pour le protocole HTTP (et 443 pour le HTTPS).\nPath (Chemin) : Indique l'emplacement de la ressource ou la route logique sur le serveur (ex: /fr/info).\nQuery parameters (Paramètres de requête) : Chaîne de données sous forme de paires clé=valeur envoyée au serveur pour modifier le traitement, introduite par ? et séparée par des & (ex: ?key1=value1&key2=value2).\nAnchor (Ancre) : Pointe vers une section ou un identifiant interne spécifique au sein du document reçu, introduite par # (ex: #anchor)."
+        },
+        {
+          "question": "Quel est le rôle des codes sources HTML, CSS et JavaScript ?",
+          "reponse": "HTML (HyperText Markup Language) : Il définit exclusivement le contenu et la structure logique de la page web à l'aide de balises.\nCSS (Cascading Style Sheets) : Il définit l'apparence graphique, la mise en forme visuelle et le design de l'interface (couleurs, typographies, disposition responsive adaptative).\nJavaScript (JS) : Il définit le dynamisme et le comportement interactif de la page côté client. Il a la capacité de manipuler dynamiquement le HTML et le CSS directement au sein du navigateur sans exiger de rechargement complet de la page de la part du serveur."
+        },
+        {
+          "question": "Que sont le W3C, la Netscape Corporation et le WHATWG ?",
+          "reponse": "W3C (World Wide Web Consortium) : Organisme international de standardisation du Web fondé en 1994. Son approche historique consistait à publier des versions de spécifications fixes et figées (comme HTML 4.0 ou XHTML 1.0).\nNetscape Communications Corporation : Entreprise pionnière du Web à l'origine du premier grand navigateur grand public, célèbre pour avoir créé et intégré pour la première fois JavaScript au sein de son navigateur en 1995.\nWHATWG (Web HyperText Application Technology Working Group) : Organisation fondée en 2004 par des éditeurs de navigateurs (Apple, Mozilla, Opera, rejoints par Google) mécontents du virage rigide du W3C vers le XHTML. Le WHATWG prônait le développement de standards évolutifs et continus pour répondre aux besoins des applications web modernes."
+        },
+        {
+          "question": "Pourquoi les dernières versions des standards HTML et CSS sont-elles respectivement la 5 et la 3 ?",
+          "reponse": "Pour le HTML (HTML5) : Après d'importantes divergences, le W3C et le WHATWG ont officiellement décidé en 2019 de fusionner leurs efforts pour travailler exclusivement sur le HTML Living Standard géré par le WHATWG. Le langage évolue désormais en continu de manière itérative sans plus jamais passer par des sorties de versions majeures figées (il n'y aura pas de 'HTML6').\nPour le CSS (CSS3) : Depuis le lancement des travaux en 1999, le standard CSS a abandonné l'idée d'un bloc monolithique unique. Il a été découpé en une multitude de modules indépendants (ex: Flexbox, Grid, Selectors, Colors) qui évoluent chacun de manière autonome avec leur propre rythme de version. Il n'y aura donc pas de spécification globale appelée 'CSS4', même si certains modules individuels atteignent le niveau 4 ou supérieur."
+        },
+        {
+          "question": "Quelles sont les différentes versions du Web ?",
+          "reponse": "Web 1.0 (Web statique / Read-only) : L'utilisateur est un simple consommateur passif. Les pages sont principalement des documents informatifs statiques consultables en lecture seule.\nWeb 2.0 (Web collaboratif / Read and write) : L'utilisateur devient à la fois consommateur et producteur de contenu (apparition des forums, des blogs, des wikis et des réseaux sociaux).\nWeb 3.0 (Web sémantique et décentralisé) : Sémantique : Les données sont structurées et interconnectées à l'échelle mondiale pour être lues et comprises par des algorithmes ou des IA, favorisant l'automatisation. Décentralisé : Les architectures évoluent pour que l'utilisateur devienne simultanément client et serveur, limitant la dépendance aux infrastructures centralisées.\nWeb 4.0 (Web symbiotique) : Caractérisé par une ubiquité totale et une interaction symbiotique continue entre l'être humain et la machine, où le Web fusionne avec la réalité physique de l'utilisateur (réalité augmentée, interfaces ubiquitaires avancées)."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Chapitre 2",
+      "questions": [
+        {
+          "question": "Qu'est-ce que le front-end et le back-end d'un système ?",
+          "reponse": "Front-end (Côté Client) : Il désigne la partie de l'architecture exécutée directement sur le terminal de l'utilisateur (ordinateur, smartphone, tablette). Il englobe l'application cliente (comme un navigateur) chargée d'interpréter les fichiers reçus pour afficher l'interface et gérer l'interaction directe avec l'utilisateur.\nBack-end (Côté Serveur) : Il désigne la partie exécutée sur le ou les serveurs distants. Son rôle est de recevoir les requêtes via le réseau, d'exécuter la logique métier (les processus), de manipuler les modèles de données en communiquant avec des bases de données ou d'autres serveurs externes, puis de formater et renvoyer la réponse au client."
+        },
+        {
+          "question": "Quels types de requêtes un front-end peut-il envoyer à un serveur ?",
+          "reponse": "Selon les définitions établies dans l'architecture du cours, le front-end émet des requêtes sur le réseau pour deux grands cas d'usage:\nRequêtes de ressources de présentation / fichiers web : Visent à récupérer les fichiers sources bruts nécessaires au rendu visuel et structurel de la page, à savoir les fichiers HTML, CSS et JavaScript.\nRequêtes de données brutes : Visent à échanger ou récupérer du contenu purement informatif ou dynamique sans mise en forme, généralement structuré sous forme de données JSON ou XML."
+        },
+        {
+          "question": "Quel est le cœur (\"core\") d'un client tel qu'un navigateur ?",
+          "reponse": "Le cœur d'un navigateur est son moteur de rendu (rendering engine). Son rôle strict est de lire, analyser et interpréter les fichiers HTML, CSS et JavaScript afin de calculer la mise en page et d'afficher le rendu visuel final sur l'écran de l'utilisateur.\nExemples du cours à citer impérativement:\nGecko (utilisé par Firefox).\nWebKit (utilisé par Safari).\nBlink / Chromium (utilisé par Chrome, Edge, Opera).\nHistorique : Trident (IE) ou Presto (anciennement Opera)."
+        },
+        {
+          "question": "Quelle est la différence entre un langage compilé et un langage interprété ?",
+          "reponse": "Langage compilé : C'est un langage dont le code source doit obligatoirement être traduit intégralement par un programme tiers (le compilateur) vers un autre langage (généralement le langage machine propre à l'architecture cible comme x86, ARM ou MIPS) avant de pouvoir être exécuté. Exemples : C, C++, Rust.\nLangage interprété : C'est un langage dont le code source reste sous sa forme textuelle d'origine et est lu, analysé et exécuté ligne par ligne, directement au moment de l'exécution, par un programme spécifique appelé interpréteur. Exemples : JavaScript, Python, PHP."
+        },
+        {
+          "question": "Quels types d'approches clients ont été couverts dans le cours ?",
+          "reponse": "Le cours recense cinq grandes approches pour concevoir des applications clientes à l'aide des technologies du Web:\nL'approche Site Web traditionnel : Le contenu est accédé classiquement via une URL à l'aide d'un navigateur standard.\nL'approche PWA (Progressive Web App) : Une application construite avec les technologies web standard, capable de tourner sur n'importe quelle plateforme depuis un code unique, mais qui offre une expérience similaire à une application native : elle s'installe sur le terminal, fonctionne hors-ligne ou en arrière-plan, et accède aux fonctionnalités de l'OS via des Web APIs spécifiques.\nL'approche WebView / Hybride : Consiste à encapsuler du code Web standard à l'intérieur d'une application native qui intègre et utilise son propre moteur de navigation interne. Exemples : Cordova (mobile), Electron (desktop).\nL'approche Native par Pont (Bridge) : Consiste à écrire du code en JavaScript mais à utiliser un framework qui sélectionne et pilote directement les composants graphiques natifs du système d'exploitation par le biais d'un pont de communication. Exemple : React Native.\nL'approche Immersive XR (Réalité Étendue) : Exploite la puissance du web pour des visualisations 3D avancées via la bibliothèque Three.js (qui dessine des scènes 3D sur un élément HTML <canvas>) et des extensions comme A-Frame qui affichent ce canvas en plein écran sur des casques ou appareils XR."
+        },
+        {
+          "question": "Qu'est-ce qu'une Interface de Programmation d'Application (API) ?",
+          "reponse": "Dans le contexte architectural du cours, une API côté serveur se définit comme :\nLa couche logicielle ou la porte d'entrée qui réceptionne et centralise les requêtes réseau entrantes (provenant d'un utilisateur ou d'un autre serveur externe). Elle agit comme un contrat d'interface : selon la route (le chemin) ciblée par la requête, l'API distribue et déclenche le processus interne adéquat sur le serveur, servant de passerelle normalisée entre le réseau extérieur et la logique métier de l'application."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Chapitre 3",
+      "questions": [
+        {
+          "question": "Quels sont les cinq grands rôles d’un ingénieur logiciel ?",
+          "reponse": "Requirements and solutions (Besoins et solutions).\nDesign and development (Conception et développement).\nTesting and code quality (Tests et qualité du code).\nDeployment in production (Déploiement en production).\nSupport and maintenance (Support et maintenance)."
+        },
+        {
+          "question": "Qu'est-ce qu'un développeur frontend, backend et full stack ?",
+          "reponse": "Frontend developer : Il travaille spécifiquement sur le côté client (Client side / Front-end). Son périmètre concerne l'utilisateur, l'appareil (Device) et l'application cliente (Browser, PWA, WebView, Native).\nBackend developer : Il travaille spécifiquement sur le côté serveur (Server side / Back-end). Son périmètre concerne les APIs, l'exécution des processus (Process), la gestion des modèles de données (Data Models) et l'interaction avec les autres serveurs et bases de données.\nFull stack developer : Il possède une expertise globale lui permettant d'intervenir à la fois sur le côté client (Front-end) et sur le côté serveur (Back-end), tout en maîtrisant la couche réseau (Network) qui assure la communication entre les deux."
+        },
+        {
+          "question": "Quelles catégories de technologies sont listées dans le cours ?",
+          "reponse": "Le cours répertorie six catégories technologiques précises constituant le 'stack' technique web:\nFrontend frameworks.\nBackend frameworks.\nDatabase frameworks.\nVersion control / Code release management.\nContinuous integration and deployment.\nContainerization and orchestration."
+        },
+        {
+          "question": "Quelles sont les raisons qui poussent à encourager une migration de système ?",
+          "reponse": "Une application peut nécessiter une migration pour les motifs majeurs suivants:\nL'application est obsolète / dépassée (Outdated applications).\nLe code source n'est pas documenté (Undocumented code).\nIl y a une perte ou un changement dans les règles métiers (Loss of or change in business rules).\nLa nécessité d'implémenter des mesures de sécurité (Security measures).\nLes services tiers utilisés ne sont plus supportés (Services no longer supported)."
+        },
+        {
+          "question": "Quelles sont les étapes clés d'une migration ?",
+          "reponse": "Le processus d'une migration d'application suit obligatoirement quatre étapes clés ordonnées:\nAnalysis of the existing situation (Analyse de la situation existante).\nDefining objectives (Définition des objectifs).\nMigration planification (Planification de la migration).\nDevelopment and deployment in production (Développement et déploiement en production)."
+        },
+        {
+          "question": "Quelles sont les recommandations sur les étapes clés d'une migration ?",
+          "reponse": "Pour les deux premières phases de la migration, le cours dicte des directives strictes :\nPour l'analyse de la situation existante (Étape 1) :\n- Comprendre précisément comment l'application actuelle fonctionne.\n- Éviter de porter des jugements hâtifs ou catégoriques.\n- Chercher à connaître et comprendre les raisons historiques derrière les choix technologiques initiaux.\n- Disposer et se servir des outils d'investigation nécessaires.\n- Établir et maintenir un dialogue continu avec les utilisateurs.\nPour la définition des objectifs (Étape 2) :\n- Déterminer avec précision les éléments et données à conserver.\n- Gérer la coexistence entre l'ancienne et la nouvelle application.\n- Cibler les fonctionnalités à abandonner ou celles à améliorer.\n- Savoir accepter des compromis.\n- Élaborer un plan d'action structuré."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Chapitre 4",
+      "questions": [
+        {
+          "question": "Qu'est-ce qu'un socket ?",
+          "reponse": "Un ordinateur utilise un Socket pour recevoir ou envoyer des données sur le réseau.\nLe récepteur (le serveur) écoute les requêtes entrantes, les accepte, reçoit les données et renvoie des réponses. Ce récepteur est ouvert sur un port spécifique de la machine et peut être accédé via une ou plusieurs adresses IP de celle-ci.\nL'émetteur (le client) envoie une requête au récepteur et attend une réponse. Généralement, le port et l'IP de l'émetteur sont choisis automatiquement par le système d'exploitation.\nLes sockets s'appuient sur plusieurs protocoles de transport (ex: UDP, TCP) et protocoles applicatifs (ex: HTTP, FTP)."
+        },
+        {
+          "question": "Quelles sont les méthodes de requête HTTP ?",
+          "reponse": "GET : Permet de récupérer une ressource.\nPOST : Permet de créer une ressource.\nPUT : Permet de mettre à jour complètement une ressource.\nPATCH : Permet de mettre à jour partiellement une ressource.\nDELETE : Permet de supprimer une ressource.\nHEAD : Équivaut à une requête GET, mais sans le corps de la réponse (sans body).\nOPTIONS : Décrit les options de communication disponibles avec la ressource cible.\nTRACE / CONNECT : Utilisées respectivement pour tester la connexion et établir des canaux de communication."
+        },
+        {
+          "question": "Que sont le \"host\" et le \"path\" d'une requête HTTP ?",
+          "reponse": "En se basant sur le modèle de l'URL du cours:\nHTTP Host : Il correspond au nom de domaine (Host / Domain) du serveur ciblé (ex: www.unamur.be).\nHTTP Path : Il englobe l'ensemble de la route logique demandée après le port, incluant le chemin d'accès strict (Path), les paramètres de requête (Query parameters) et l'ancre éventuelle (Anchor) (ex: /fr/info?key1=value1&key2=value2#anchor)."
+        },
+        {
+          "question": "Quelles sont les catégories de codes de réponse HTTP ? Listez quelques codes.",
+          "reponse": "Les cinq grandes catégories (plages de codes) :\n100-199 : Réponses informatives (Informational responses).\n200-299 : Réponses de succès (Successful responses).\n300-399 : Réponses de redirection (Redirection responses).\n400-499 : Réponses d'erreur client (Client error responses).\n500-599 : Réponses d'erreur serveur (Server error responses).\nLabels de codes spécifiques à connaître par cœur :\n200 OK : La requête a réussi.\n201 CREATED : La requête a réussi et a mené à la création d'un document/ressource.\n400 BAD REQUEST : La syntaxe de la requête est invalide.\n401 UNAUTHORIZED : Une authentification est obligatoire pour accéder à la ressource.\n403 FORBIDDEN : L'opération n'est pas autorisée ; une authentification ne changera pas cet état.\n404 NOT FOUND : La ressource demandée n'a pas été trouvée.\n500 INTERNAL SERVER ERROR : Une erreur générique est survenue sur le serveur.\n501 NOT IMPLEMENTED : L'opération demandée n'est pas implémentée ou supportée par le serveur."
+        },
+        {
+          "question": "Quel type d'information peut-on trouver dans un en-tête (Header) HTTP ?",
+          "reponse": "Content-length : Indique la taille du corps du message (body content) exprimée en octets (bytes).\nContent-type : Indique le type de média du contenu envoyé. Exemples du cours : text/plain, text/html, text/css, text/javascript, application/json, ou application/xml.\nAuthorization : Fournit les informations d'identification et de d'authentification (credentials).\nCookie : Contient les cookies définis au préalable par le client ou par le serveur.\nAccess-Control-* (ex: Allow-Methods, Allow-origin, Allow-Headers) : Sert à contrôler et appliquer les règles de la politique CORS (Cross-Origin Resource Sharing)."
+        },
+        {
+          "question": "Comparez les approches de programmation synchrone et asynchrone.",
+          "reponse": "Le contexte de base : Les temps de réponse des accès réseau ne peuvent jamais être entièrement contrôlés ou prédits.\nL'approche Synchrone :\n- Le flux de l'application est séquentiel ; il se bloque et attend obligatoirement de recevoir la réponse réseau avant de pouvoir continuer l'exécution des instructions suivantes.\n- Si une tâche réseau prend du temps (par exemple 1015 ms d'attente sur un total de 1045 ms), le processeur reste inactif à attendre sans rien faire.\nL'approche Asynchrone :\n- Elle permet au flux de l'application de mieux planifier et ordonnancer les tâches.\n- Au lieu de bloquer le fil d'exécution en attendant la réponse du réseau, l'application continue d'exécuter d'autres tâches indépendantes en parallèle, ce qui optimise drastiquement le temps total d'exécution."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Chapitre 5",
+      "questions": [
+        {
+          "question": "Comment est composée une balise HTML ?",
+          "reponse": "Un élément HTML est composé de deux parties : une balise d'ouverture et une balise de fermeture (ex: <p> et </p>). La balise d'ouverture contient le nom de l'élément, qui définit sa sémantique. Elle peut également contenir des attributs (des propriétés associées à l'élément) auxquels on assigne des valeurs spécifiques."
+        },
+        {
+          "question": "Quelle est la différence entre les éléments inline et block en HTML ?",
+          "reponse": "Les éléments \"inline\" se placent horizontalement et prennent uniquement la largeur dont ils ont besoin pour leur contenu. Les éléments \"block\", en revanche, se placent verticalement (génèrent des retours à la ligne) et prennent toute la largeur possible qu'ils peuvent occuper."
+        },
+        {
+          "question": "Quelles sont les trois méthodes pour intégrer du CSS dans une balise HTML ?",
+          "reponse": "Inline CSS : Ajout direct via l'attribut style au sein même de la balise HTML.\nInternal CSS : Définition des règles dans une balise <style> située dans le <head> du document HTML.\nExternal CSS : Importation d'un fichier CSS externe via la balise <link> dans le <head>."
+        },
+        {
+          "question": "Comment fonctionne la surcharge (overriding) des règles en CSS ?",
+          "reponse": "Le CSS fonctionne en ajoutant des règles plutôt qu'en les supprimant. En cas de conflit de ciblage sur un même élément, le navigateur applique la règle la plus spécifique (selon le type de sélecteur) ou la dernière lue dans l'ordre du code. Une bonne architecture privilégie l'ajout de nouvelles classes (ex: .frame) au lieu d'annuler manuellement des propriétés précédentes (ex: border: 0px)."
+        },
+        {
+          "question": "Comment est composée une règle CSS ?",
+          "reponse": "Une règle CSS est composée d'un sélecteur (pour identifier quels éléments HTML seront impactés) suivi d'un bloc de déclarations. Chaque déclaration est elle-même composée du nom de la règle (la propriété) et de sa valeur."
+        },
+        {
+          "question": "Qu'est-ce qu'un design responsive (responsive design) ?",
+          "reponse": "Le Responsive Web Design (RWD) est une approche de conception visant à faire en sorte que les pages web s'affichent correctement et offrent une bonne ergonomie sur toutes les tailles d'écrans et résolutions. Cela passe notamment par l'utilisation de requêtes multimédias (media queries, par exemple @media screen)."
+        },
+        {
+          "question": "Quelles sont les deux méthodes pour intégrer du JS dans une balise HTML ?",
+          "reponse": "1. Interne : En écrivant le code source JavaScript directement entre les balises <script> et </script>.\n2. Externe : En liant un fichier JavaScript externe via l'attribut src de la balise <script>."
+        },
+        {
+          "question": "Quelle est la différence entre var, let et const en JS ?",
+          "reponse": "var est une variable en lecture/écriture dont la portée (scope) est restreinte au bloc de la fonction (function block).\nlet est une variable en lecture/écriture dont la portée est restreinte au bloc immédiat (immediate block, délimité par {}).\nconst est une constante, c'est-à-dire une variable en lecture seule qui ne peut pas être réassignée."
+        },
+        {
+          "question": "Qu'implique le mode strict (strict mode) en JavaScript ?",
+          "reponse": "Le mode strict (activé avec \"use strict\") permet de transformer des erreurs silencieuses en erreurs explicites pour sécuriser le code. Par exemple, tenter de modifier une propriété en lecture seule (comme un getter sans setter associé) lancera une erreur en mode strict, alors que l'action serait simplement ignorée en mode classique."
+        },
+        {
+          "question": "Qu'est-ce que le DOM en JS ?",
+          "reponse": "Le Document Object Model (DOM) est une représentation en mémoire de la page HTML sous forme d'arbre. Il permet au JavaScript d'interagir dynamiquement avec la page pour récupérer, ajouter, modifier ou supprimer des nœuds HTML et modifier leur style."
+        },
+        {
+          "question": "Quelle est la différence entre les différents emplacements de stockage en JS ?",
+          "reponse": "Local Storage : Stocke des données côté client sans limite de temps (aucune expiration).\nSession Storage : Stocke des données côté client avec un temps d'expiration limité à la session de navigation en cours.\nCookies : Stockent des données qui sont envoyées automatiquement au serveur avec chaque requête HTTP. Cela comporte un risque de sécurité sous-jacent, car ils peuvent être modifiés par le client ou interceptés sur le réseau."
+        },
+        {
+          "question": "Qu'est-ce qu'AJAX ?",
+          "reponse": "AJAX (Asynchronous JavaScript XML) est un paradigme permettant de récupérer ou d'envoyer des données à un serveur de manière asynchrone sans avoir à recharger la page. Historiquement mis en place avec l'interface XMLHttpRequest (fonctionnant avec des callbacks et événements), il est aujourd'hui souvent remplacé par la Fetch API (plus moderne, basée sur les promesses et l'approche async-await)."
+        },
+        {
+          "question": "Qu'est-ce qu'un websocket ?",
+          "reponse": "Un WebSocket est un paradigme de communication bidirectionnelle en temps réel entre le client et le serveur, via une seule connexion TCP. Le canal reste ouvert pendant tout l'échange, ce qui permet aux deux parties de s'envoyer des messages sans utiliser le lourd paradigme des requêtes/réponses répétées (évitant ainsi la latence et la surcharge réseau)."
+        },
+        {
+          "question": "Que sont les linters et les formatters ?",
+          "reponse": "Linter : Outil d'analyse statique qui vérifie la qualité du code source JS et détecte les erreurs (ex: ESLint).\nFormatter : Outil d'analyse statique qui réécrit et formate l'intégralité du programme pour assurer une cohérence visuelle et stylistique dans le code (ex: Prettier)."
+        },
+        {
+          "question": "Que sont TypeScript, Sass et Scss ?",
+          "reponse": "Ce sont des extensions de langages de base.\nTypeScript : Un langage typé construit par-dessus JavaScript, qui se compile en JavaScript.\nSass et Scss : Des extensions de CSS qui ajoutent des fonctionnalités de programmation et se compilent en CSS standard."
+        },
+        {
+          "question": "Qu'est-ce qu'un CDN et NPM ?",
+          "reponse": "CDN (Content Delivery Network) : Un réseau de serveurs répartis géographiquement qui accélère la distribution du contenu web (comme les frameworks) en rapprochant physiquement les données des utilisateurs.\nNPM : Le gestionnaire de paquets (package installer) par défaut de l'environnement Node.js. Il sert à initialiser un projet (via le package.json), installer des dépendances et lancer des scripts."
+        },
+        {
+          "question": "Qu'est-ce qu'un \"module bundler\" et un outil de développement ? Expliquez leurs avantages.",
+          "reponse": "Un \"module bundler\" (comme Webpack ou Vite) est un outil de développement qui facilite grandement le processus de création. Ses avantages sont : il permet de configurer un serveur de développement avec rechargement automatique, de gérer dynamiquement les modules (compilation automatique du Sass et du TypeScript), de créer des paquets (chunks), de lancer les tests, et de minifier le JS et le CSS lors de la phase de \"build\" pour la production."
+        },
+        {
+          "question": "Quelle est la différence entre SSG, CSR, SPA et SSR ?",
+          "reponse": "SSG (Static Site Generation) : Les fichiers HTML, CSS, JS et les assets sont générés avant le déploiement et envoyés directement au client de façon statique, sans traitement supplémentaire.\nCSR (Client-Side Rendering) : Le JavaScript s'exécute côté client (dans le navigateur) pour générer le contenu de la page en temps réel.\nSPA (Single Page Application) : Une architecture d'application web basée sur le CSR, composée d'un seul fichier HTML dont le contenu est entièrement géré dynamiquement par le JS.\nSSR (Server-Side Rendering) : L'utilisation d'un moteur de template côté serveur pour générer dynamiquement le fichier HTML qui sera ensuite envoyé au client."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Chapitre 6",
+      "questions": [
+        {
+          "question": "Donnez quelques avantages (pros) et inconvénients (cons) d'une Single Page Application (SPA).",
+          "reponse": "Avantages :\n- Séparation complète entre les logiques front-end et back-end.\n- Les données back-end sont accessibles via une API unifiée pour toutes les applications.\n- Réduction de la charge du serveur puisque le rendu de la vue est effectué du côté client.\n- Permet d'activer un mode hors ligne (offline mode).\nInconvénients :\n- L'application n'est pas optimisée pour le référencement naturel (SEO) car les pages sont créées au moment de l'exécution (runtime).\n- Le code doit être correctement divisé en blocs (chunks) pour éviter d'envoyer la totalité des ressources (assets) à chaque chargement.\n- L'historique de navigation du navigateur doit être géré manuellement.\n- Il y a une dépendance absolue au JavaScript."
+        },
+        {
+          "question": "Comment détecter la modification d'une variable JS ?",
+          "reponse": "Pour détecter les changements de valeur d'une variable et refléter ces changements automatiquement, on utilise un modèle d'abonnement (subscription pattern). Il existe deux approches principales gérées par les frameworks :\n- L'approche par Getter et Setter.\n- L'approche par Proxy, qui agit comme une couche d'interception sur l'objet (c'est la méthode recommandée).\nNote additionnelle pour l'oral : Ces approches ne fonctionnent que sur des objets JS ; les types primitifs (comme les chaînes de caractères ou les nombres) ne peuvent pas être directement rendus réactifs."
+        },
+        {
+          "question": "Que sont un virtual DOM, un incremental DOM et un shadow DOM ?",
+          "reponse": "Virtual DOM (VDOM) : C'est une copie indépendante en mémoire du DOM HTML qui évolue en fonction des modifications opérées sur les variables JS. Les changements sont ensuite appliqués au DOM HTML réel à des moments précis grâce à un algorithme de \"diffing\".\nIncremental DOM (IDOM) : Contrairement au VDOM, il ne recrée pas d'arbre complet. Il est basé sur une série d'instructions générées à partir du composant. Ces instructions constituent le moteur de rendu qui crée et met à jour directement le DOM HTML, ce qui permet d'utiliser moins de mémoire.\nShadow DOM : C'est un élément natif du standard web, et non un système réactif. Il permet d'attacher un arbre DOM caché à un élément pour l'encapsuler. Ainsi, son implémentation interne (HTML, CSS, JS) est invisible et protégée des scripts exécutés dans le reste de la page."
+        },
+        {
+          "question": "Présentez quelques techniques pour un algorithme de diffing.",
+          "reponse": "Un algorithme de diffing (utilisé notamment avec le VDOM) compare les états pour n'appliquer que les changements nécessaires. Voici des techniques spécifiques :\n- Static hoisting (Vue) : Consiste à extraire le contenu statique de la fonction de rendu du template pour éviter de le recréer à chaque nouvel appel.\n- Patch flags (Vue) : Consiste à ajouter une balise (tag) à chaque élément pour indiquer précisément le type de modification qui a été effectuée.\n- Vapor mode (Vue) : Une stratégie de compilation alternative visant à générer un code JS plus efficace, utilisant moins de mémoire et évitant le VDOM traditionnel.\n- Approche React : Si des éléments sont de types différents, le nœud est supprimé et la branche recréée de zéro. S'ils sont du même type, le système se contente de mettre à jour les propriétés. Enfin, l'utilisation de \"Keys\" permet de faire correspondre les éléments d'une liste aux éléments HTML pour ne pas avoir à tout reparcourir."
+        },
+        {
+          "question": "Qu'est-ce que l'approche par composants (component-based approach) ?",
+          "reponse": "C'est une architecture dans laquelle l'application est construite sur un ensemble de composants (templates). Un composant regroupe en un seul endroit le code HTML minimum nécessaire, le CSS (styles spécifiques optionnels) et le JS (comportement et logique) relatifs à un même élément.\nCes composants peuvent être importés et réutilisés dans d'autres composants. Cela revient, en quelque sorte, à définir de nouvelles balises HTML personnalisées, mais avec toute une logique métier intégrée derrière."
+        },
+        {
+          "question": "Comment les composants peuvent-ils communiquer entre eux ?",
+          "reponse": "La communication entre les composants s'effectue généralement selon trois axes :\n- Du Parent vers l'Enfant : Le parent transmet des données d'entrée (input data / props) au composant enfant.\n- De l'Enfant vers le Parent : Le composant enfant peut définir et émettre des événements personnalisés (custom events) qui seront écoutés et traités par le parent.\n- Via un Store Réactif (Reactive Store) : Des composants peuvent stocker (Store) et récupérer (Retrieve) des données globales partagées dans un magasin d'état centralisé, indépendamment de leur lien de parenté."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "Chapitre 7",
+      "questions": [
+        {
+          "question": "Expliquez les patterns MVC, services et intercepteurs (interceptor patterns).",
+          "reponse": "MVC (Model-View-Controller) : Ce pattern structure le code source d'une application en isolant les responsabilités. Les Models gèrent le stockage et la logique métier (représentation des données). Les Views s'occupent d'afficher les informations aux utilisateurs. Les Controllers font le lien entre les modèles et les vues.\nService Architecture : Cette architecture sépare les préoccupations en couches logicielles. Le Model (ou entité) définit les propriétés des données, le Service définit les opérations et la logique qui peuvent être effectuées sur ce modèle, et le Controller organise l'appel aux méthodes de ces services pour répondre aux besoins du client.\nInterceptor Pattern : Il consiste à ajouter une couche utilitaire ou métier qui intercepte le flux avant que la requête n'atteigne le contrôleur, ou avant que la réponse ne soit renvoyée au client. Cela permet de centraliser des traitements comme la validation, l'authentification ou le monitoring."
+        },
+        {
+          "question": "Quels sont les cinq moyens de communiquer des données du client vers le serveur ?",
+          "reponse": "1. Les en-têtes HTTP (HTTP Header) pour des informations spécifiques.\n2. Les cookies, qui sont automatiquement joints à chaque requête envoyée au serveur.\n3. Le corps de la requête (Request body), principalement utilisé dans les requêtes POST.\n4. Les paramètres de chemin (Path parameters, intégrés directement dans l'URL).\n5. Les paramètres de requête (Query parameters, ajoutés à la fin de l'URL après un point d'interrogation)."
+        },
+        {
+          "question": "Quelles sont les six règles d'une API RESTful ?",
+          "reponse": "Pour qu'une API soit qualifiée de RESTful, elle doit strictement respecter ces six contraintes:\n- Architecture Client-Serveur avec ressources : Le client effectue des opérations (CRUD via les méthodes HTTP) sur des ressources (entités métiers) gérées par le serveur.\n- Communications sans état (Stateless) : Chaque transaction est indépendante ; le serveur ne conserve aucune information sur les interactions passées du client.\n- Mise en cache possible (Cacheable) : Les données fréquemment consultées peuvent être placées en cache pour optimiser les performances.\n- Interface uniforme : Les ressources doivent être identifiées de manière unique, manipulées via leurs représentations, accompagnées de messages auto-descriptifs, et utiliser l'hypermédia (HATEOAS) pour indiquer au client les actions possibles.\n- Système en couches invisible (Layered system) : Le client interagit avec l'API sans pouvoir savoir s'il communique avec le serveur final ou avec des intermédiaires architecturaux.\n- Code à la demande (Code on request - optionnel) : Les fonctionnalités du client peuvent être étendues en téléchargeant et en exécutant du code (comme des scripts)."
+        },
+        {
+          "question": "Qu'est-ce que GraphQL et comment cela fonctionne-t-il ?",
+          "reponse": "Concept : GraphQL est un langage de communication entre le client et le serveur permettant d'interroger, de muter ou de s'abonner à des entités. Son avantage principal est de retourner une réponse qui correspond exactement à la structure de la requête envoyée par le client.\nFonctionnement :\n- Des types et des fonctions de résolution (resolver functions) sont d'abord définis côté serveur pour indiquer comment charger les données.\n- Le client envoie ensuite une requête, qui peut être une Query (pour lire des données), une Mutation (pour créer, mettre à jour ou supprimer des données), ou une Subscription (pour s'abonner à des événements en temps réel).\n- Le serveur GraphQL valide cette requête, l'exécute selon l'implémentation prévue, et renvoie la réponse demandée."
+        },
+        {
+          "question": "Quelles sont les opérations nécessaires sur le serveur pour gérer les WebSockets ?",
+          "reponse": "Pour gérer correctement les connexions bidirectionnelles WebSocket, le serveur doit:\n- Accepter ou rejeter la demande de connexion entrante du client.\n- Lorsqu'une connexion est acceptée, ajouter les informations du client (comme le socket) dans un gestionnaire (un \"manager\", c'est-à-dire une classe qui stocke tous les clients connectés).\n- Créer un thread spécifique pour gérer les requêtes de cette nouvelle connexion.\n- (Optionnellement) Mettre en place un système de canaux ou d'autres logiques plus spécifiques aux besoins de l'application."
+        },
+        {
+          "question": "Quels sont les différents types d'intercepteurs (interceptors) ?",
+          "reponse": "Bien que les noms puissent varier selon le framework, on distingue quatre grandes familles d'intercepteurs:\n- Middleware : Un intercepteur qui capture les requêtes entrantes ou les réponses sortantes afin de les manipuler.\n- Guard (Gardien) : Un intercepteur servant à protéger une route en acceptant, en bloquant ou en redirigeant une requête.\n- Pipe : Un intercepteur de transformation qui convertit les données d'entrée reçues pour leur donner la forme souhaitée.\n- Filter (Filtre) : Un intercepteur de transformation qui attrape les exceptions de sortie pour les convertir en statuts et réponses HTTP valides."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Chapitre 8",
+      "questions": [
+        {
+          "question": "Qu'est-ce qu'un ORM (Object-Relational Mapping) ?",
+          "reponse": "Un ORM est une technique qui permet de faire correspondre (mapper) les schémas de la base de données relationnelle directement sur les modèles d'objets de l'application. Cela permet au développeur de faire abstraction des requêtes SQL et de simplifier les traitements nécessaires sous-jacents."
+        },
+        {
+          "question": "Qu'est-ce qu'un DAO (Database Access Object) ?",
+          "reponse": "Un DAO est une classe qui rassemble toutes les méthodes nécessaires pour accéder aux données de la base de données, créant ainsi une abstraction pour les requêtes SQL. Il est généralement construit autour des opérations de base CRUD (Create, Read, Update, Delete). L'unique objectif du DAO est de gérer la persistance des données, c'est-à-dire leur stockage physique."
+        },
+        {
+          "question": "Qu'est-ce que le pattern repository ?",
+          "reponse": "Le pattern repository est semblable au DAO (car il est aussi généralement construit autour des opérations CRUD), mais il se situe à un niveau d'abstraction supérieur. Il se concentre sur la collecte des données en intégrant des règles métier (business rules) dans sa logique. Par exemple, un repository est capable de coordonner et d'appeler plusieurs DAO pour retourner une représentation plus complexe et globale de la donnée."
+        },
+        {
+          "question": "Qu'est-ce qu'une vulnérabilité XSS et comment la traiter ?",
+          "reponse": "Définition : Le Cross-Site Scripting (XSS) est une faille qui consiste à injecter un script malveillant côté client afin de voler des données utilisateurs ou de les rediriger vers un site de phishing, par exemple.\nSolution globale : Il faut toujours analyser (parser) les données d'entrée pour échapper, supprimer ou nettoyer tout code potentiellement malveillant.\nPour ce faire, on peut définir des fonctions spécifiques de nettoyage.\nOn peut utiliser des bibliothèques dédiées comme JQuery en JS, ou MarkupSafe et nh3 en Python.\nOn privilégiera également l'utilisation de fonctions natives sécurisées, comme innerText au lieu de innerHTML, pour insérer du texte afin d'éviter l'interprétation de balises."
+        },
+        {
+          "question": "Qu'est-ce qu'une vulnérabilité CSRF et comment la traiter ?",
+          "reponse": "Définition : Le Cross-Site Request Forgery (CSRF) est une attaque qui consiste à injecter ou forcer une requête (via une image ou une URL par exemple) à l'insu d'une personne authentifiée qui possède les droits pour l'exécuter sur le serveur.\nSolutions :\n- Utiliser un token (jeton) CSRF délivré par le serveur pour vérifier formellement l'origine et la légitimité de la requête.\n- Mettre en place un système d'authentification complexe qui ne repose pas uniquement sur la présence de cookies.\n- Utiliser l'attribut SameSite sur les cookies de session pour empêcher le navigateur de les inclure dans les requêtes qui ne proviennent pas du domaine exact de l'application."
+        },
+        {
+          "question": "Qu'est-ce qu'une vulnérabilité par injection SQL et comment la traiter ?",
+          "reponse": "Définition : L'injection SQL consiste à insérer une requête SQL malveillante directement dans la valeur d'un champ de saisie, dans le but de la faire exécuter par le serveur de base de données.\nSolutions :\n- S'assurer que le compte du SGBD (Système de Gestion de Base de Données) utilisé par l'application possède des droits restreints et uniquement les autorisations strictement requises.\n- Utiliser systématiquement des requêtes préparées (prepared requests) : cette technique consiste à laisser le pilote (driver) injecter et sécuriser les arguments lui-même, plutôt que de concaténer manuellement les chaînes de caractères de la requête."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Chapitre 9",
+      "questions": [
+        {
+          "question": "Quelle est la différence entre une authentification \"stateful\" et \"stateless\" ?",
+          "reponse": "Stateful (avec état) : Comme dans l'authentification par cookies de session, le serveur doit mémoriser et stocker les informations de la session utilisateur. Cela peut être complexe à gérer sur des architectures réparties (comme les microservices).\nStateless (sans état) : Comme avec un token JWT, le serveur ne stocke aucune session. Toutes les informations nécessaires à la vérification (identité, droits) sont contenues de manière sécurisée dans le jeton lui-même, qui est renvoyé par le client à chaque requête."
+        },
+        {
+          "question": "Quelles sont les trois parties d'un token JWT (JSON Web Token) ?",
+          "reponse": "Un token JWT est composé de trois parties encodées, séparées par des points :\n- Le Header (En-tête) : Contient le type du token (\"JWT\") et l'algorithme de hachage utilisé pour la signature (ex: HS256).\n- Le Payload (Données / Claims) : Contient les revendications (claims), c'est-à-dire les informations sur l'utilisateur (comme l'ID sub, le rôle, le nom) et la date d'expiration (exp).\n- La Signature : Permet au serveur de vérifier que le token n'a pas été altéré en cours de route. Elle est générée en utilisant le Header, le Payload et une clé secrète détenue par le serveur."
+        },
+        {
+          "question": "Que sont un schéma d'authentification SSO et le standard OAuth 2.0 ?",
+          "reponse": "SSO (Single Sign-On) : C'est un schéma d'authentification centralisée. L'utilisateur se connecte une seule fois avec ses identifiants auprès d'un serveur d'autorisation, ce qui lui donne ensuite un accès transparent à plusieurs autres services (grâce à une relation de confiance établie entre ces services).\nOAuth 2.0 : C'est un protocole d'autorisation (et non d'authentification pure) basé sur des Access Tokens. Il permet à une application d'accéder aux ressources hébergées par un autre service au nom de l'utilisateur, sans que l'application n'ait jamais accès aux identifiants (mots de passe) de l'utilisateur."
+        },
+        {
+          "question": "Qu'est-ce que le standard WCAG ?",
+          "reponse": "Le WCAG (Web Content Accessibility Guidelines) est un standard qui définit des règles strictes pour rendre le contenu web accessible aux personnes en situation de handicap. Il repose sur 4 principes fondamentaux (Perceptible, Utilisable, Compréhensible et Robuste) et évalue l'accessibilité selon 3 niveaux de critères de succès : A, AA, et AAA."
+        },
+        {
+          "question": "Que sont les standards internationaux i18n et l10n ?",
+          "reponse": "i18n (Internationalisation) : Ce sont tous les ajustements techniques et architecturaux (front-end et back-end) nécessaires pour préparer une application à supporter des différences géographiques et culturelles (base de code universelle, gestion du sens de lecture du texte, formatage des données).\nl10n (Localisation) : C'est l'adaptation concrète du contenu pour une région spécifique. Cela passe par la traduction des textes via des fichiers \"locales\" (souvent en JSON avec un système de clé/valeur) et l'adaptation aux normes locales (devises, dates), ce qui peut impacter le rendu visuel de l'interface."
+        },
+        {
+          "question": "Qu'est-ce que l'objet namespace \"Intl\" en JavaScript ?",
+          "reponse": "Intl est une API native intégrée dans les navigateurs JavaScript modernes. Elle fournit des fonctions d'internationalisation prêtes à l'emploi pour le front-end, permettant de formater facilement et correctement les dates (DateTimeFormat), les nombres et les devises (NumberFormat) en fonction de la région (\"locale\") ou des préférences de l'utilisateur."
+        }
+      ]
+    }
+  ]
+}
