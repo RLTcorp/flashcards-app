@@ -38,7 +38,7 @@ export function FlashcardViewer({ chapter }: FlashcardViewerProps) {
     do {
       randomIndex = Math.floor(Math.random() * questions.length)
     } while (randomIndex === currentIndex && questions.length > 1)
-    
+
     setDirection(randomIndex > currentIndex ? 1 : -1)
     setIsFlipped(false)
     setCurrentIndex(randomIndex)
@@ -54,7 +54,7 @@ export function FlashcardViewer({ chapter }: FlashcardViewerProps) {
           <span>{currentIndex + 1} / {questions.length}</span>
         </div>
         <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
-          <motion.div 
+          <motion.div
             className="h-full bg-primary"
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
@@ -63,7 +63,7 @@ export function FlashcardViewer({ chapter }: FlashcardViewerProps) {
         </div>
       </div>
 
-      <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] perspective-1000 mb-8">
+      <div className="relative w-full h-[65vh] min-h-[400px] max-h-[600px] perspective-1000 mb-8">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={currentIndex}
@@ -74,25 +74,29 @@ export function FlashcardViewer({ chapter }: FlashcardViewerProps) {
             transition={{ duration: 0.3 }}
             onClick={() => setIsFlipped(!isFlipped)}
           >
-            <motion.div 
+            <motion.div
               className="absolute inset-0 w-full h-full transform-style-3d"
               animate={{ rotateY: isFlipped ? 180 : 0 }}
               transition={{ type: "spring", stiffness: 200, damping: 20 }}
             >
               {/* Front */}
-              <div className="absolute inset-0 w-full h-full backface-hidden glass-panel rounded-3xl p-8 sm:p-12 flex flex-col justify-center items-center text-center shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-sm font-semibold tracking-wider text-primary mb-6 uppercase">Question</div>
-                <h2 className="text-2xl sm:text-3xl font-medium leading-relaxed">{questions[currentIndex].question}</h2>
-                <div className="absolute bottom-6 text-sm text-muted-foreground animate-pulse">
+              <div className="absolute inset-0 w-full h-full backface-hidden glass-panel rounded-3xl p-6 sm:p-10 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow">
+                <div className="text-sm font-semibold tracking-wider text-primary mb-4 uppercase shrink-0">Question</div>
+                <div className="flex-1 w-full overflow-y-auto custom-scrollbar flex items-center justify-center py-2">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed">{questions[currentIndex].question}</h2>
+                </div>
+                <div className="mt-4 text-sm text-muted-foreground animate-pulse shrink-0">
                   Cliquez pour révéler
                 </div>
               </div>
 
               {/* Back */}
-              <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 glass-panel rounded-3xl p-8 sm:p-12 flex flex-col items-start shadow-lg overflow-y-auto custom-scrollbar">
-                <div className="w-full text-center text-sm font-semibold tracking-wider text-emerald-500 mb-6 uppercase">Réponse</div>
-                <div className="text-lg sm:text-xl font-medium leading-relaxed whitespace-pre-wrap w-full text-left pb-4">
-                  {questions[currentIndex].reponse}
+              <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 glass-panel rounded-3xl p-6 sm:p-10 flex flex-col items-start shadow-lg">
+                <div className="w-full text-center text-sm font-semibold tracking-wider text-emerald-500 mb-4 uppercase shrink-0">Réponse</div>
+                <div className="flex-1 w-full overflow-y-auto custom-scrollbar">
+                  <div className="text-base sm:text-lg md:text-xl font-medium leading-relaxed whitespace-pre-wrap w-full text-left pb-4">
+                    {questions[currentIndex].reponse}
+                  </div>
                 </div>
               </div>
             </motion.div>

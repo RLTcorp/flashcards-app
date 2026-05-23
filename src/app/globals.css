@@ -26,7 +26,7 @@
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
-  
+
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -39,6 +39,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -70,10 +71,10 @@
     --input: rgba(226, 232, 240, 0.5);
     --ring: rgba(37, 99, 235, 0.3);
     --radius: 1rem;
-    
+
     --glass-border: rgba(255, 255, 255, 0.5);
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-    
+
     /* Google inspired accents */
     --google-blue: #4285F4;
     --google-red: #EA4335;
@@ -101,7 +102,7 @@
     --border: rgba(51, 65, 85, 0.5);
     --input: rgba(51, 65, 85, 0.5);
     --ring: rgba(59, 130, 246, 0.3);
-    
+
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
@@ -111,7 +112,7 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    @apply antialiased min-h-screen selection:bg-primary/20 selection:text-primary transition-colors duration-500 ease-in-out;
+    @apply antialiased min-h-[100dvh] selection:bg-primary/20 selection:text-primary transition-colors duration-500 ease-in-out;
   }
 }
 
@@ -123,14 +124,14 @@
     border: 1px solid var(--glass-border);
     box-shadow: var(--glass-shadow);
   }
-  
+
   .glass-button {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--glass-border);
   }
-  
+
   .dark .glass-button {
     background: rgba(15, 23, 42, 0.3);
   }
@@ -157,15 +158,17 @@
   .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
   }
+
   .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent;
   }
+
   .custom-scrollbar::-webkit-scrollbar-thumb {
     background: rgba(156, 163, 175, 0.5);
     border-radius: 10px;
   }
+
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: rgba(107, 114, 128, 0.8);
   }
 }
-
